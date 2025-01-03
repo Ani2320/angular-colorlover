@@ -1,0 +1,12 @@
+<h1>Introducing the paintings of the Art Institute of Chicago</h1>
+<div class = "pictures">
+    @for(picture of pictures; track picture.id) {
+        <div class = "picture" key = {picture.id}> 
+            <img [src]="picture.imageURI" alt="imagen de {{picture.title}}">
+            <div class = "picture-info">
+                <h2>{{picture.title}}</h2>
+                <h3>{{picture.artistName}}</h3>
+            </div>
+        </div>
+    }     
+</div>
